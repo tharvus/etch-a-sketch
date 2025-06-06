@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Etch A Sketch</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Etch A Sketch! Draw whatever you want!</h1>
+        <div class="promptRows">
+            <div>
+                <form id="rowInputForm" onsubmit="submitRowAmountFn(event)">
+                    <label for="numRows">Number of Squares per side (maximum: 100 and minimum 0): </label> 
+                    <input type="text" id="numRows" name="numRows">
+
+                    <input type="submit" >
+                </form>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="drawerOptions">
+            <div>   
+                <input type="radio" name="drawOptions" id="pencil" value="pencil" checked>
+                <label for="pencil">Pencil</label>
+            </div>
+            
+            <div>
+                <input type="radio" name="drawOptions" id="color" value="color">
+                <label for="color">Color</label>
+            </div>
+            
+            <div>
+                <input type="radio" name="drawOptions" id="eraser" value="eraser">
+                <label for="eraser">Eraser</label>
+            </div>
+            
+        </div>
+        <div class="grids">
+            
+        </div>
+        
+        <script src="functions.js" async defer></script>
+    </body>
+</html>
