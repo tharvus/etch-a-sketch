@@ -37,7 +37,6 @@ const createGrid = () => {
             innerDiv.style.border = "1px solid black";
             innerDiv.className = "innerDiv";
             divToAdd.append(innerDiv);
-
         }
         parentDiv.append(divToAdd);
     }
