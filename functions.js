@@ -1,5 +1,6 @@
 // objective: To make a NUM_ROWS * NUM_ROWS square div
 let NUM_ROWS = 16;
+const MAX_WIDTH = 1000;
 let drawable = false;
 
 // create enum to show all options
@@ -31,8 +32,8 @@ const createGrid = () => {
             // pElem.textContent = "Hello World";
             innerDiv.append(pElem);
 
-            innerDiv.style.height = "100px";
-            innerDiv.style.width = "100px";
+            innerDiv.style.height = `${MAX_WIDTH/NUM_ROWS}px`;
+            innerDiv.style.width = `${MAX_WIDTH/NUM_ROWS}px`;
             innerDiv.style.border = "1px solid black";
             innerDiv.className = "innerDiv";
             divToAdd.append(innerDiv);
